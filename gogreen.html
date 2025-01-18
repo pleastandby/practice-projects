@@ -10,29 +10,29 @@
 <body>
 
 <div class = "container">
-    <div class="home">
+    <div class="head-section">
         <div class = "name">
             <h1>GO</h1>
-            <h1 id="green">GREEN</h1>
+            <h1 id="green">GREEN.ic</h1>
         </div>
         <nav>
         <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#location">LOCATION</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#home" class="tablink active" data-tab="home">HOME</a></li>
+            <li><a href="#aboutsection" class="tablink" data-tab="aboutsection">ABOUT</a></li>
+            <li><a href="#location" class="tablink" data-tab="location">LOCATION</a></li>
+            <li><a href="#contact" class="tablink" data-tab="contact">CONTACT</a></li>
             <li><button onclick="signUp()">SIGN UP</button></li>
         </ul>
         </nav>
     </div>
 
-    <div class="content" id="home">
+    <div class="content active" id="home">
         <div class="prof-image">
             <img src="profile.jpg" alt="tree" id="prof">
-        </div>
-        <div class="line"></div>
-        <div class="info">
-            <div class="sub-head">
+            </div>
+            <div class="line"></div>
+            <div class="info">
+                <div class="sub-head">
                 <h2>It's Your<h2>
                 <h2>Sign To Plant</h2>
                 <h2> A</h2>
@@ -42,8 +42,56 @@
             <button>SIGN UP</button>
         </div>   
     </div>
+    <div class="content" id="aboutsection">
+        <div class="about-pic">
+            <img src="about.jpg" alt="about.jpg" id="about-pic">
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <h1 id="about">About</h1>
+            <p>At GoGreen.Co, we’re on a mission to make the world greener by planting trees and 
+            <br>restoring nature. By working with communities and organizations, we combat climate change, 
+            <br>protect wildlife, and create a healthier planet for future generations. Join us in growing a greener, 
+            <br>brighter future—one tree at a time!</p>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="location">
+        <div class="prof-image">
+            <img src="location.jpg" alt="location.jpg" id="prof">
+        </div>
+        <div class="line"></div>
+        <div class="location">
+            <div class="location-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <h2>GreenRoots Initiative</h2>
+            </div>
+            <p>123 Evergreen Lane
+                <br>Forestville, Nature State 56789
+                ><br>USA
 
-    <div class="foot" id="contact">
+                <br>Email: contact@gogreen.co.org
+                <br>Phone: +1 (555) 123-4567
+                </p>
+        </div>
+    </div>
+    <div class="content" id="contact">
+        <div class="contact">
+            <h1>Your Feedbacks are valuable to us!</h1>
+            <form action="mailto:contact@gogreen.co.org" method="post" enctype="text/plain">
+                <div class="e-name">
+                    <input type="text" name="f-name" id="f-name" placeholder="First Name">
+                    <input type="text" name="l-name" id="l-name" placeholder="Last Name">
+                </div>
+                <input type="email" name="email" id="email" placeholder="email">
+                <textarea  rows="5" cols="40" placeholder="Write your feedback here..."></textarea>
+                <input type="submit" name="Sumbit">
+            </form>
+        </div>
+    </div>
+    <div class="foot" id="foot">
         <h2>Save The World With Us!</h2>
         <div class="icons">
             <a href="instagram.com">
@@ -62,4 +110,5 @@
     </div>
 </div>
 </body>
+<script src="green.js"></script>
 </html>
